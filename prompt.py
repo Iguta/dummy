@@ -4,10 +4,10 @@ def report_count(text:str) -> str:
     try:
         with open("././corpus.txt", 'r', encoding='utf-8') as file:
             text=file.read()
-            print(text)
+            
             #Then we split the text into words using an empty space as the delimeter
             # we also convert all the words and our token to lower case
-            words = text.lower.split()
+            words = text.lower().split()
             token = token.lower()
             #count the number of instances the word appears in the text
             no_of_word_instances = words.count(token)
