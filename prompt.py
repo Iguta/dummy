@@ -1,10 +1,8 @@
 
 
-def report_count() -> str:
+def report_count(token:str) -> str:
     #first we read our text from corpus.txt file 
 
-    # printing the token for debugging
-    print(token)
     try:
         with open("././corpus.txt", 'r', encoding='utf-8') as file:
             text=file.read()
