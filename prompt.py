@@ -15,7 +15,7 @@ def report_count(token:str) -> str:
             no_of_word_instances = words.count(token)
             
             #formulate and return our prompt
-            return(f'The term {token} shows up in the corpus {no_of_word_instances} times')
+            return(f'The term {token} shows up in the corpus {no_of_word_instances} times.')
     except FileNotFoundError:
         print("File not found")
 
