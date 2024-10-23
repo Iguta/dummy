@@ -2,7 +2,7 @@
 def report_count(text:str) -> str:
     #first we read our text from corpus.txt file 
     try:
-        with open("././corpus.txt", r, encoding='utf-8') as file:
+        with open("././corpus.txt", 'r', encoding='utf-8') as file:
             text=file.read()
             #Then we split the text into words using an empty space as the delimeter
             # we also convert all the words and our token to lower case
